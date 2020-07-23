@@ -5,6 +5,7 @@ resource "aws_instance" "phpapp" {
   associate_public_ip_address = "true"
   subnet_id = var.subnet_id
   availability_zone = "ap-south-1a"
+  key_name          = "Home_T420_aws_keypair_mumbai_navink20582gmailcom"
 
 user_data = <<-EOF
             #!/bin/bash
